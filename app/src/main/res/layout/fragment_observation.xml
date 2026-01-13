@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- dropdown -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/langBox"
         android:layout_width="120dp"
@@ -95,7 +95,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- chips -->
+
     <LinearLayout
         android:id="@+id/chipRow"
         android:layout_width="0dp"
@@ -130,7 +130,7 @@
             android:paddingHorizontal="12dp" android:paddingVertical="6dp" android:layout_margin="6dp"/>
     </LinearLayout>
 
-    <!-- bottom buttons -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomRow"
         android:layout_width="0dp"

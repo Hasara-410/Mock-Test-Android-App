@@ -58,7 +58,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- ✅ MUST be ViewPager2 with id = pagerShow -->
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/pagerShow"
         android:layout_width="0dp"
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/chipRow"/>
 
-    <!-- chips -->
+
     <LinearLayout
         android:id="@+id/chipRow"
         android:layout_width="0dp"
@@ -102,7 +102,7 @@
             android:paddingHorizontal="12dp" android:paddingVertical="6dp" android:layout_margin="6dp"/>
     </LinearLayout>
 
-    <!-- bottom -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottomRow"
         android:layout_width="0dp"

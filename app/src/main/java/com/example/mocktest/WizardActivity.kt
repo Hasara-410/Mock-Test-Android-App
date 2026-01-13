@@ -16,7 +16,7 @@ class WizardActivity : AppCompatActivity() {
 
         pager.isUserInputEnabled = false
 
-        // ✅ IMPORTANT: keep only current page alive (prevents crash when changing language)
+
         pager.offscreenPageLimit = 1
 
         pager.adapter = WizardAdapter(this)

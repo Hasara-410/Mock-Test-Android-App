@@ -35,7 +35,7 @@ class HomeActivity : AppCompatActivity() {
         rv.clipChildren = false
         rv.overScrollMode = RecyclerView.OVER_SCROLL_NEVER
 
-        // show side cards
+
         rv.setPadding(180, 0, 180, 0)
 
         val transformer = CompositePageTransformer()

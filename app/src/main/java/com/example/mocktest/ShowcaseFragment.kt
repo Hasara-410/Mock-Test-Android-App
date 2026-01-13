@@ -21,7 +21,7 @@ class ShowcaseFragment : Fragment(R.layout.fragment_showcase) {
         super.onViewCreated(view, savedInstanceState)
         val act = requireActivity() as WizardActivity
 
-        // dropdown
+
         val langBox = view.findViewById<View>(R.id.langBox)
         val txtLang = view.findViewById<TextView>(R.id.txtLang)
         val btnArrow = view.findViewById<ImageView>(R.id.btnArrow)
@@ -42,7 +42,7 @@ class ShowcaseFragment : Fragment(R.layout.fragment_showcase) {
         btnArrow.setOnClickListener { showLangMenu() }
         vm.selectedLanguage.observe(viewLifecycleOwner) { txtLang.text = it }
 
-        // ✅ pager (3 cards preview)
+
         val pager = view.findViewById<ViewPager2>(R.id.pagerShow)
 
         fun refreshPager() {
@@ -50,16 +50,16 @@ class ShowcaseFragment : Fragment(R.layout.fragment_showcase) {
             pager.adapter = ShowcasePagerAdapter(list)
         }
 
-        // IMPORTANT: allow drag
+
         pager.isUserInputEnabled = true
         pager.offscreenPageLimit = 3
         pager.clipToPadding = false
         pager.clipChildren = false
 
-        // show side cards (padding)
+
         pager.setPadding(90, 0, 90, 0)
 
-        // transformer: spacing + scale
+
         val transformer = CompositePageTransformer()
         transformer.addTransformer(MarginPageTransformer(20))
         transformer.addTransformer { page, position ->
@@ -75,7 +75,7 @@ class ShowcaseFragment : Fragment(R.layout.fragment_showcase) {
         vm.image3.observe(viewLifecycleOwner) { refreshPager() }
         refreshPager()
 
-        // buttons
+
         view.findViewById<Button>(R.id.btnPrev).setOnClickListener { act.prev() }
         view.findViewById<Button>(R.id.btnFinish).setOnClickListener { act.goToHome() }
     }

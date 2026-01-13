@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- dropdown -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/langBox"
         android:layout_width="120dp"
@@ -103,8 +103,7 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- ✅ Barrier: chooses whichever button area is visible -->
-    <!-- ✅ Barrier: chooses whichever button area is visible -->
+
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/bottomBarrier"
         android:layout_width="wrap_content"
@@ -112,7 +111,7 @@
         app:barrierDirection="top"
         app:constraint_referenced_ids="btnAreaFullNext,btnAreaPrevNext"/>
 
-    <!-- ✅ SAME GAP for all pages -->
+
     <View
         android:id="@+id/gap"
         android:layout_width="0dp"
@@ -121,7 +120,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- big card -->
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/imageCard"
         android:layout_width="0dp"

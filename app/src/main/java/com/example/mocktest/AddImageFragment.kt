@@ -43,7 +43,7 @@ class AddImageFragment : Fragment(R.layout.fragment_add_image) {
 
         title.text = "Add Image $index"
 
-        // ---------- SAFE LANGUAGE DROPDOWN ----------
+
         val langBox = view.findViewById<View?>(R.id.langBox)
         val txtLang = view.findViewById<TextView?>(R.id.txtLang)
         val btnArrow = view.findViewById<ImageView?>(R.id.btnArrow)
@@ -70,14 +70,12 @@ class AddImageFragment : Fragment(R.layout.fragment_add_image) {
                 txtLang.text = it
             }
         }
-        // -------------------------------------------
 
-        // Pick image
         view.findViewById<View>(R.id.imageCard).setOnClickListener {
             pickImage.launch("image/*")
         }
 
-        // Buttons
+
         val btnFullNext = view.findViewById<Button>(R.id.btnAreaFullNext)
         val areaPrevNext = view.findViewById<View>(R.id.btnAreaPrevNext)
 
@@ -92,7 +90,7 @@ class AddImageFragment : Fragment(R.layout.fragment_add_image) {
             view.findViewById<Button>(R.id.btnNext).setOnClickListener { act.next() }
         }
 
-        // Show image
+
         val live = when (index) {
             1 -> vm.image1
             2 -> vm.image2

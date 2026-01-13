@@ -18,7 +18,7 @@ class ObservationFragment : Fragment(R.layout.fragment_observation) {
 
         val act = requireActivity() as WizardActivity
 
-        // ✅ SAFE nullable
+
         val langBox = view.findViewById<View?>(R.id.langBox)
         val txtLang = view.findViewById<TextView?>(R.id.txtLang)
         val btnArrow = view.findViewById<ImageView?>(R.id.btnArrow)
